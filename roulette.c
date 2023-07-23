@@ -1,25 +1,4 @@
-/*******************************************************
-This program was created by the
-CodeWizardAVR V3.12 Advanced
-Automatic Program Generator
-© Copyright 1998-2014 Pavel Haiduc, HP InfoTech s.r.l.
-http://www.hpinfotech.com
 
-Project : 
-Version : 
-Date    : 18/07/2023
-Author  : 
-Company : 
-Comments: 
-
-
-Chip type               : ATmega164A
-Program type            : Application
-AVR Core Clock frequency: 20.000000 MHz
-Memory model            : Small
-External RAM size       : 0
-Data Stack size         : 256
-*******************************************************/
 
 #include <mega164a.h>
 #include <delay.h>
@@ -27,62 +6,10 @@ Data Stack size         : 256
 #include <stdbool.h>
 
 
-// Declare your global variables here
-
-/*void play(int spin , bool win , int dly , int red)
-{ 
-int i;
-
-while(win == false)
-         {
-             for(i = 0 ; i < 6 ; i++)
-             {  
-                PORTB = 0;
-                delay_ms(30);
-                PORTB ^= 1 << i;
-                //printf("%d" , i);
-                delay_ms(dly);
-                dly *= 1.02;
-                if(dly >= 4000)
-                {
-                    if(spin == red)
-                    {
-                        if(PORTB == 1 || PORTB == 8 || PORTB == 32)
-                        {
-                            break;
-                        }
-                        else
-                        {   
-                            if(PORTB == 64)
-                                PORTB = 1;
-                            else    
-                               PORTB = 1 << 1;
-                            break;   
-                        }
-                    }
-                    else
-                    {
-                        if(PORTB == 2 || PORTB == 16 || PORTB == 64)
-                        {
-                            break;
-                        }
-                        else
-                        {       
-                            PORTB = 1 << 1;
-                            break;   
-                        }
-                    }
-                     
-                    win = true;  
-                }     
-              }
-         }
-}*/
 
          
 void main(void)
 {
-// Declare your local variables here
 float dly;
 int i;
 int spin = 0;
